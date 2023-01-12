@@ -101,6 +101,8 @@ h1, h2 {
     text-align: center;
 
     color: #000000;
+
+    animation: toFadeIn 2s;
 }
 
 button {
@@ -124,6 +126,21 @@ button:hover {
     background: #e48b0f; 
     transition: background .2s;
 }
+
+@keyframes toFadeIn {
+    0% {
+      transform:
+      translateY(150px)
+      scale(0.1);
+
+    }
+
+    100% {
+      transform:
+      translateY(0px)
+      scale(1);
+    }
+  }
 
 @keyframes shake{
     0% {
